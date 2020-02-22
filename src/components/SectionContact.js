@@ -49,7 +49,7 @@ class SectionContact extends Component {
     return (
       <div className='section row'>
         <div className='section-content-contact' id={id}>
-          <h1> KONTAKT </h1>
+          <h1> CONTAKT </h1>
         </div>
         <div className='section-content-contact-below'>
         <div className='row'>
