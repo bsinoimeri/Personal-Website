@@ -13,6 +13,11 @@ jobs:
     steps:
     - name: Install node_modules
       run: npm install
+    - name: gcloud auth
+      uses: GoogleCloudPlatform/github-actions@0.1.1
+      with:
+       version: '275.0.0'
+       service_account_key: ${{ secrets.GCP_SA_KEY }}
     - name: Build static assets
       run: npm build
     - name: gcloud deploy
