@@ -15,7 +15,6 @@ jobs:
       run: npm install
     - name: Build static assets
       run: npm build
-    - uses: actions/checkout@v2
     - name: gcloud auth
       uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
       with:
