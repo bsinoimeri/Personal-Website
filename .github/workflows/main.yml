@@ -1,6 +1,9 @@
 name: build & deploy
 
-on: [push]
+on:
+  push:
+    branches:
+    - master
 
 jobs:
   build:
@@ -8,8 +11,6 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - name: filter master 
-      uses: actions/bin/filter@master
     - name: install node_modules
       run: npm install
     - name: build static assets
