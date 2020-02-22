@@ -21,5 +21,6 @@ jobs:
        version: '275.0.0'
        service_account_key: ${{ secrets.GCP_SA_KEY }}
     - name: gcloud deploy
-      run: gcloud app deploy --project personal-web-bela
-      
+      run:  gcloud -q app deploy app.yaml --promote
+
+
