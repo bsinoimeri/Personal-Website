@@ -13,6 +13,8 @@ jobs:
     steps:
     - name: Install node_modules
       run: npm install
+    - name: Remove old build
+      run: git rm -r build
     - name: Build static assets
       run: npm build
     - name: gcloud auth
