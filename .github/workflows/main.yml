@@ -14,7 +14,7 @@ jobs:
     - name: Install node_modules
       run: npm install
     - name: Build static assets
-      run: npm run build
+      run: npm build
     - name: gcloud deploy
       run:  gcloud app deploy --project personal-web-bela
 
