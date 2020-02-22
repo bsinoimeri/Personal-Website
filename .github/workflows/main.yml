@@ -21,6 +21,7 @@ jobs:
        version: '281.0.0'
        service_account_key: ${{ secrets.GCP_SA_KEY }}
        export_default_credentials: true 
+    - uses: actions/checkout@v2:  
     - name: gcloud deploy
       run:  gcloud app deploy --project personal-web-bela
       
