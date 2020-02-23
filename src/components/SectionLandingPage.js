@@ -13,7 +13,7 @@ class SectionLandingPage extends Component {
       <div className='section section-pink'>
         <div className='section-content-landing' id={id}>
           <img className='myAvatar' src={myAvatar} alt='bela-avatar'></img>
-          <h1> BELA SINOIMERI PROVE</h1>
+          <h1> BELA SINOIMERI</h1>
           <p>
             <i> Software - Electronics Engineer </i>
           </p>
