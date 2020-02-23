@@ -1,10 +1,9 @@
 steps:
   - name: 'gcr.io/cloud-builders/npm'
-      id: install_front_end
     args: ['install']
   - name: 'gcr.io/cloud-builders/npm'
     args: ['run', 'build']
-  - name: 'gcr.io/personal-web-bela/firebase'
+  - name: 'gcr.io/$PROJECT_ID/firebase'
     args:
       - deploy
       - --only=hosting
