@@ -1,4 +1,10 @@
 steps:
-- name: "gcr.io/cloud-builders/gcloud"
-  args: ["app", "deploy"]
-timeout: "1600s"
+  - name: 'gcr.io/cloud-builders/npm'
+      id: install_front_end
+    args: ['install']
+  - name: 'gcr.io/cloud-builders/npm'
+    args: ['run', 'build']
+  - name: 'gcr.io/personal-web-bela/firebase'
+    args:
+      - deploy
+      - --only=hosting
