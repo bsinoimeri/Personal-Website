@@ -4,6 +4,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-scroll";
+import BelaIcon from "../assets/BelaIcon.gif";
 
 class SectionLandingPage extends Component {
   render() {
@@ -11,18 +12,7 @@ class SectionLandingPage extends Component {
     return (
       <div className="section section-pink">
         <div className="section-content-landing" id={id}>
-          <img className="myAvatar" src={myAvatar} alt="bela-avatar"></img>
-          <br></br>
-          <img
-            className="belasinoimeri-logo"
-            src="https://fontmeme.com/permalink/200502/93c090dfeba70e5350905e591d15bdd0.png"
-            alt="belasinoimeri"
-            onClick={this.scrollToTop}
-          ></img>
-          <p>
-              {" "}
-              Software - Electronics Engineer{" "}
-          </p>
+          <img className="myAvatar" src={BelaIcon} alt="bela-avatar"></img>
           <ul className="accounts">
             <a href="https://github.com/bsinoimeri" className="btn-github">
               <FontAwesomeIcon icon={faGithub} size="4x" />

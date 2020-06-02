@@ -47,9 +47,7 @@ class SectionAbout extends Component {
             </div>
             <div className="row">
               <div className="resume-photo-column">
-                <Button raised colored onClick={this.onResumeClick}>
-                  Resume
-                </Button>
+
               </div>
             </div>
           </div>
