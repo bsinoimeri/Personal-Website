@@ -25,9 +25,6 @@ class App extends Component {
                 <div>
                   <Navbar />
                   <SectionLandingPage id="section1" />
-                  <SectionAbout id="section2" />
-                  <SectionProjects id="section3" />
-                  <SectionContact id="section4" />
                 </div>
               )}
             />        

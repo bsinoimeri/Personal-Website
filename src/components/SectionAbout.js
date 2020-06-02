@@ -19,16 +19,16 @@ class SectionAbout extends Component {
         </div>
         <div className='section-content-about-below'>
           <div className='row'>
-            <div className='column' style={{paddingTop: "20px"}}>
+            <div className='column' style={{paddingLeft: "150px", paddingTop: "20px"}}>
               <div>
                 <p>
-                  <i>
+                  <i  style={{ fontFamily: "Raleway" }}>
                     Just a 23-year-old software engineer working in agile development using
                     the latest tech stack. 
                   </i>
                 </p>
                 <p>
-                  <i>
+                  <i  style={{ fontFamily: "Raleway" }}>
                     A valedictorian graduate in MSc Electronic Engineering, who
                     likes combining software and hardware
                     skills.
@@ -42,7 +42,7 @@ class SectionAbout extends Component {
                   className='illustrationabout'
                   src={illustrationabout}
                   alt='illustrationabout'
-                ></img>
+                ></img><br></br>
                 <Button raised colored onClick={this.onResumeClick}>Resume</Button>
               </div>
             </div>
