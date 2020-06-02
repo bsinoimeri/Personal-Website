@@ -16,6 +16,47 @@
   flex: 1;
 }
 
+/* BACKGROUND VIDEO */
+
+.background-video{
+width: 800px;
+height: 100vh;
+display: block;
+margin: auto;
+}
+
+@media(max-width: 800px) {
+  .background-video{
+  width: 500px;
+  height: 100vh;
+  display: block;
+  margin: auto;
+}}
+
+@media(max-width: 500px) {
+  .background-video{
+  width: 400px;
+  height: 100vh;
+  display: block;
+  margin: auto;
+}}
+
+@media(max-width: 400px) {
+  .background-video{
+  width: 300px;
+  height: 100vh;
+  display: block;
+  margin: auto;
+}}
+
+@media(max-width: 300px) {
+  .background-video{
+  width: 200px;
+  height: 100vh;
+  display: block;
+  margin: auto;
+}}
+
 /* NAVBAR */
 .nav {
   background-color: var(--off-white);
@@ -43,7 +84,7 @@
 }
 
 .nav-items a {
-  color: #333;
+  color:black;
 }
 
 .nav-item:hover a {
@@ -59,8 +100,8 @@
 }
 
 .section-pink {
-  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
-  background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  background: -webkit-linear-gradient(to right, #F5F5F5, #FFBCD9);
+  background: linear-gradient(to right, #F5F5F5, #FFBCD9);
 }
 
 .section-content {
@@ -75,9 +116,10 @@
 }
 
 .section-content-landing h1 {
+  font-family: "Raleway";
   padding-top: 20px;
   font-size: 37px;
-  color: #333;
+  color: black;
   font-weight: bold;
   margin: 0px;
   border-bottom: white;
@@ -107,6 +149,9 @@
   display: flex;
   justify-content: center;
 }
+.belasinoimeri-logo {
+  padding: 25px;
+}
 
 .btn-github {
   color: white;
@@ -115,11 +160,16 @@
 
 .btn-linkedin {
   color: white;
+  padding-right: 10px;
 }
 
 .btn-email {
   color: white;
-  padding-right: 15px;
+  padding-right: 10px;
+}
+.btn-calendly {
+  color: white;
+  padding-right: 10px;
 }
 
 /* LANDING PAGE*/
@@ -131,12 +181,13 @@
 }
 
 .section-content-about h1 {
+  font-family: "Raleway";
   padding-top: 70px;
   font-size: 37px;
-  color: #333;
+  color: black;
   font-weight: bold;
   margin: 0px;
-  border-bottom: #333;
+  border-bottom: black;
   border-width: 2px;
   border-style: solid;
   border-right: none;
@@ -146,7 +197,7 @@
 
 .section-content-about-below {
   margin: 0 384.5px;
-  padding: 20px 40px;
+  padding: 20px 100px;
   padding-bottom: 100px;
 }
 
@@ -169,7 +220,7 @@
 }
 
 .mdl-button--raised.mdl-button--colored {
-  background: #ee9ca7 !important;
+  background: #FFBCD9 !important;
   font-size: 17px;
   margin: 0px 55px;
 }
@@ -178,6 +229,7 @@
 
 /* PROJECT PAGE */
 .section-gray {
+  font-family: "Raleway";
   display: flex;
   margin: auto;
   justify-content: center;
@@ -190,12 +242,13 @@
 }
 
 .section-content-projects h1 {
+  font-family: "Raleway";
   padding-top: 70px;
   font-size: 37px;
-  color: #333;
+  color: black;
   font-weight: bold;
   margin: 0px;
-  border-bottom: #333;
+  border-bottom: black;
   border-width: 2px;
   border-style: solid;
   border-right: none;
@@ -212,7 +265,7 @@
   border-bottom: none !important;
 }
 .mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
-  background: #ee9ca7 !important;
+  background: #FFBCD9 !important;
 }
 
 .mdl-grid {
@@ -225,7 +278,7 @@
 }
 
 .projects-grid .mdl-button.mdl-button--colored {
-  color: #ee9ca7 !important;
+  color: #FFBCD9 !important;
 }
 
 /* PROJECT PAGE */
@@ -241,12 +294,13 @@
 }
 
 .section-content-contact h1 {
+  font-family: "Raleway";
   padding-top: 50px;
   font-size: 37px;
-  color: #333;
+  color: black;
   font-weight: bold;
   margin: 0px;
-  border-bottom: #333;
+  border-bottom: black;
   border-width: 2px;
   border-style: solid;
   border-right: none;
@@ -271,7 +325,7 @@
 }
 
 .mdl-textfield__label:after {
-  background-color: #ee9ca7  !important;
+ background-color: #FFBCD9  !important;
 }
 
 .illustrationcontact {

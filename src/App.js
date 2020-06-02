@@ -1,23 +1,41 @@
-import React, { Component } from "react";
+import React, { Component, useContext}from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-// import Section from "./components/Section";
 import SectionLandingPage from "./components/SectionLandingPage";
 import SectionAbout from "./components/SectionAbout";
 import SectionProjects from "./components/SectionProjects";
 import SectionContact from "./components/SectionContact";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Login from "./components/Login";
+import Create from "./components/Create";
+import PreWeb from "./components/PreWeb";
+import {AuthProvider} from "./components/Auth";
+import PrivateRoute from "./components/PrivateRoute";
 
 class App extends Component {
   render() {
     return (
-      <div className='App'>
-        <Navbar />
-        <SectionLandingPage id='section1'/>
-        <SectionAbout id='section2'/>
-        <SectionProjects  id="section3"/>
-        <SectionContact id="section4"
-        /> 
-      </div>
+      <AuthProvider>
+        <Router>
+          <div>
+          <Route exact path="/" component={PreWeb} />
+            <Route
+              exact path="/home"
+              render={() => (
+                <div>
+                  <Navbar />
+                  <SectionLandingPage id="section1" />
+                  <SectionAbout id="section2" />
+                  <SectionProjects id="section3" />
+                  <SectionContact id="section4" />
+                </div>
+              )}
+            />        
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/create" component={Create} />
+          </div>
+        </Router>
+        </AuthProvider>
     );
   }
 }
