@@ -1,54 +1,59 @@
 import React, { Component } from "react";
 import illustrationabout from "../illustrationabout.svg";
-import {Button} from "react-mdl";
+import { Button } from "react-mdl";
 import cv from "../cv.pdf";
+import AboutMe from "../assets/AboutMe.png";
+import AboutMeExpanded from "../assets/AboutMeExpanded.gif";
 
 class SectionAbout extends Component {
-
-  onResumeClick = ()=> {
+  onResumeClick = () => {
     window.open(cv);
-  }
+  };
 
   render() {
     const { id } = this.props;
     return (
-
-      <div className='section row'>
-        <div className='section-content-about' id={id}>
-          <h1> ABOUT ME </h1>
+      <div className="section row">
+        <div className="section-content-about" id={id}>
+          <img
+            src={AboutMe}
+            alt="AboutMe"
+            className="nav-logo-menu-about"
+          ></img>
         </div>
-        <div className='section-content-about-below'>
-          <div className='row'>
-            <div className='column' style={{paddingLeft: "150px", paddingTop: "20px"}}>
+
+
+        <div className="column-about">
+        <img
+            src={AboutMeExpanded}
+            alt="AboutMe"
+            className="bela-expanded"
+          ></img>
+        </div>
+
+
+        <div className="column-about">
+          <div className="row">
               <div>
                 <p>
-                  <i  style={{ fontFamily: "Raleway" }}>
-                    Just a 23-year-old software engineer working in agile development using
-                    the latest tech stack. 
-                  </i>
+                    A 23-year-old software engineer working in agile
+                    development using the latest tech stack.
                 </p>
                 <p>
-                  <i  style={{ fontFamily: "Raleway" }}>
                     A valedictorian graduate in MSc Electronic Engineering, who
-                    likes combining software and hardware
-                    skills.
-                  </i>
+                    likes combining software and hardware skills.
                 </p>
               </div>
             </div>
-            <div className='column'>
-              <div className='resume-photo-column'>
-                <img
-                  className='illustrationabout'
-                  src={illustrationabout}
-                  alt='illustrationabout'
-                ></img><br></br>
-                <Button raised colored onClick={this.onResumeClick}>Resume</Button>
+            <div className="row">
+              <div className="resume-photo-column">
+                <Button raised colored onClick={this.onResumeClick}>
+                  Resume
+                </Button>
               </div>
             </div>
           </div>
         </div>
-      </div>
     );
   }
 }

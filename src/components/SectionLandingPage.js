@@ -20,10 +20,8 @@ class SectionLandingPage extends Component {
             onClick={this.scrollToTop}
           ></img>
           <p>
-            <i style={{ fontFamily: "Raleway" }}>
               {" "}
               Software - Electronics Engineer{" "}
-            </i>
           </p>
           <ul className="accounts">
             <a href="https://github.com/bsinoimeri" className="btn-github">
